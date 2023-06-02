@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  header {
+    background-color: #f9a825;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: white;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .trophy-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .trophy {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .trophy img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .trophy img:hover {
+    transform: scale(1.2);
+  }
+  
+  .trophy img:not(:hover) {
+    transform: scale(1);
+  }
+  
+  .trophy h3 {
+    font-size: 24px;
+    color: #f95e25;
+    margin: 20px;
+  }
+  
+  .trophy p {
+    font-size: 14px;
+    color: #777;
+    margin: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    .trophy-container {
+      gap: 10px;
+    }
+  
+    .trophy {
+      max-width: 100%;
+    }
+  }
+  
+  .trophy img:active {
+    transform: scale(1.2);
+  }
+  
+  .trophy img:focus:not(:active) {
+    transform: scale(1);
+  }
+  
+  .button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .button {
+    background-color: red;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    background-color: #FF5733; 
+  }
+  
+  
+  

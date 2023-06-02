@@ -1,0 +1,86 @@
+.player {
+  display: inline-block;
+  width: 200px;
+  height: 200px; 
+  text-align: center;
+  margin: 10px;
+  margin-right: 150px; 
+  border: 2px solid #ccc; 
+  overflow: hidden;
+}
+
+h2{
+  text-align: center;
+  color:white;
+  text-shadow:5px 5px 6px gray;
+}
+
+h1 {
+  text-align: center;
+  transition: font-size 0.3s;
+  color:white;
+}
+
+h1:hover {
+  font-size: 40px;
+}
+
+
+img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.player img:hover {
+  transform: scale(1.1);
+}
+
+.button-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.button {
+  background-color: red;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #FF5733; 
+}
+
+body {
+  background-color: black;
+  animation: backgroundSlideshow 12s infinite;
+}
+
+@keyframes backgroundSlideshow {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: gray;
+  }
+  50% {
+    background-color: lightgray;
+  }
+  75% {
+    background-color: darkgray;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
